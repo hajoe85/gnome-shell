@@ -26,12 +26,21 @@
 
   // weekday label
   .day-label {
+    @extend %title_2;
+    // determined by trial&error, not sure why i wasn't able to make day-label
+    // take the full parent width. setting display:block or width: 100% wasn't working
+    // i guess due to gnomes limited css support
+    width: 14em;
+    color: $fg_color;
+    text-align: center;
     font-weight: bold;
   }
 
   // date label
   .date-label {
     @extend %title_2;
+    color: $fg_color;
+    text-align: center;
   }
 }
 
